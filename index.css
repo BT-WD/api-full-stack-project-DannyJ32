@@ -38,3 +38,39 @@ header h1 {
   color: #888780;
 }
  
+/* ===== search bar ===== */
+.search-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+ 
+.search-bar input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #B4B2A9;
+  border-radius: 8px;
+  font-size: 14px;
+  background: #FAFAF7;
+  font-family: inherit;
+}
+ 
+.search-bar button {
+  padding: 10px 16px;
+  border: 1px solid #B4B2A9;
+  border-radius: 8px;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+  font-family: inherit;
+}
+ 
+.search-bar button.primary {
+  background: #2C2C2A;
+  color: white;
+  border-color: #2C2C2A;
+}
+ 
+.search-bar button.primary:hover {
+  background: #444441;
+}
