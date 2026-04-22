@@ -38,7 +38,7 @@ header h1 {
   color: #888780;
 }
  
-/* ===== search bar ===== */
+/* search bar */
 .search-bar {
   display: flex;
   gap: 8px;
@@ -74,3 +74,56 @@ header h1 {
 .search-bar button.primary:hover {
   background: #444441;
 }
+
+/* column layout */
+main {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr;
+  gap: 16px;
+}
+ 
+/* left column */
+.stock-display {
+  border: 1px solid #D3D1C7;
+  border-radius: 12px;
+  padding: 20px;
+}
+ 
+.stock-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+ 
+.stock-label {
+  font-size: 13px;
+  color: #888780;
+  margin-bottom: 4px;
+}
+ 
+.stock-price {
+  font-size: 28px;
+  font-weight: 600;
+}
+ 
+.stock-change {
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  background: #F1EFE8;
+  color: #888780;
+}
+ 
+.stock-change.positive {
+  background: #E1F5EE;
+  color: #0F6E56;
+}
+ 
+.stock-change.negative {
+  background: #FCEBEB;
+  color: #A32D2D;
+}
+ 
+
